@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Arrays;
 public class Main {
     public static void main (String[] args){
         Scanner sc = new Scanner (System.in);
@@ -11,6 +12,7 @@ public class Main {
        System.out.print( goodPair(A, B));
     }
     public static int goodPair (int[] A, int B){
+        Arrays.sort(A);
         int l = 0;
         int r = A.length -1;
 
@@ -26,3 +28,4 @@ public class Main {
         return 0;
     }
 }
+
