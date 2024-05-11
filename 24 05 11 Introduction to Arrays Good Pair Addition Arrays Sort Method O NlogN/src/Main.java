@@ -15,7 +15,7 @@ public class Main {
         int r = A.length -1;
 
         while (l<r){
-            int sum = l+r;
+            int sum = A[l]+A[r];
             if (sum == B){
                 return 1;
 
